@@ -22,3 +22,6 @@ Route::get('/master', function () {
 Route::get('/data-tables', function () {
     return view('datatable');
 });
+
+Route::get('/pertanyaan/create', 'PertanyaanController@create');
+Route::POST('/pertanyaan', 'PertanyaanController@baru');
